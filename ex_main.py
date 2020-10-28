@@ -3,11 +3,10 @@ from pyproj import Transformer
 import math
 #import csv
 
-"""definicje trnasformacji  
+"""definicje trnasformacji   
     2180 - Poland CS92
     2178 - Poland CS2000 zone 7 
     """
-
 transformacja = Transformer.from_crs(2180, 2178)
 tt = transformacja.transform
 trans2000na192 = Transformer.from_crs(2178, 2180)
